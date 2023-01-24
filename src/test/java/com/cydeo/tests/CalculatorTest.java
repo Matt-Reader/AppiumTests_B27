@@ -19,7 +19,7 @@ public class CalculatorTest {
         caps.setCapability(MobileCapabilityType.DEVICE_NAME,"Pixel 3");
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
         caps.setCapability(MobileCapabilityType.PLATFORM_VERSION,"10.0");
-        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,,"UiAutomator2");
+        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
         // this is where we tell appium what we are testing
         caps.setCapability(MobileCapabilityType.APP,"https://cybertek-appium.s3.amazonaws.com/calculator.apk");
 
