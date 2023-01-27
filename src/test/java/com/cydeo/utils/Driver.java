@@ -44,6 +44,12 @@ public class Driver {
                     desiredCapabilities2.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
                     desiredCapabilities2.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 3");
                     desiredCapabilities2.setCapability(MobileCapabilityType.APP, "C:\\Users\\Oscar\\IdeaProjects\\AppiumTests_B27\\Android.SauceLabs.Mobile.Sample.app.2.7.1.apk");
+
+                    // set your application package name
+                    desiredCapabilities2.setCapability("appPackage","com.swaglabsmobileapp");
+                    // set your application's MainActivity, Launcher Activity Name
+                    desiredCapabilities2.setCapability("appActivity","com.swaglabsmobileapp.SplashActivity");
+
                     try {
                         url = new URL("http://localhost:4723/wd/hub");
                     } catch (MalformedURLException e) {
