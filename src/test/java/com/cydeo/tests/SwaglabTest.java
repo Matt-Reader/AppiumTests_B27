@@ -14,6 +14,7 @@ public class SwaglabTest {
 
         System.out.println(driver.getDeviceTime());
 
+        Thread.sleep(4000);
         driver.findElement(MobileBy.AccessibilityId("test-Username")).sendKeys("standard_user");
         driver.findElement(MobileBy.AccessibilityId("test-Password")).sendKeys("secret_sauce");
         driver.findElement(MobileBy.AccessibilityId("test-LOGIN")).click();
